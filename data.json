@@ -1,0 +1,9 @@
+{
+  "firstName": "Hans",
+  "lastName": "Danielsson",
+
+  "kurser": [
+    {"kursNamn": "Databas", "studenter": 42},
+    {"kursNamn": "Testverktyg", "studenter": 19}
+  ]
+}
