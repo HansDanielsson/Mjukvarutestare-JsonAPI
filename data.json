@@ -1,6 +1,8 @@
 {
-  "firstName": "Hans",
+  "name": "Hans",
   "lastName": "Danielsson",
+  "age": 36,
+  "occupation": "Elev",
 
   "kurser": [
     {"kursNamn": "Databas", "studenter": 42},
