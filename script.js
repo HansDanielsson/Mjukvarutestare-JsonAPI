@@ -22,7 +22,7 @@ let newStruct = JSON.parse(myJson)
 console.log(newStruct)
 
 // Funktion som hämtar data från JSON fil
-async function getJsonFromFile(source) {
+async function getJsonFromSource(source) {
   // Använd metoden Fetch för att hämta data
   let resp = await fetch(source)
 
@@ -42,16 +42,16 @@ async function getJsonFromFile(source) {
     document.getElementById("jsonOutput").append(child)
   }
 
-  // Skriv ut namnOutput
+  // Skriv ut namn i namnOutput
   document.getElementById("nameOutput").innerText = data["name"]
 }
 
 // await getJsonFromFile('./data.json')
 
 document.getElementById('btnJson').addEventListener('click', async () => {
-  await getJsonFromFile('./data.json')
+  await getJsonFromSource('./data.json')
 })
 
 document.getElementById('btnIss').addEventListener('click', async () => {
-  await getJsonFromFile('https://api.wheretheiss.at/v1/satellites/25544')
+  await getJsonFromSource('https://api.wheretheiss.at/v1/satellites/25544')
 })
